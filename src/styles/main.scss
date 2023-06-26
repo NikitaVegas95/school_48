@@ -162,6 +162,18 @@ body {
 
 .content__input-wrapper {
     position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.empty-input-error {
+    position: absolute;
+    bottom: -20px;
+    color: red;
+    font-size: 16px;
+    font-family: $font-family-MinSans;
 }
 
 .reset-wrapper {

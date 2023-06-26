@@ -1,8 +1,7 @@
-import React from 'react';
-import '../styles/main.scss'
+import React, { FC } from "react";
+import '../styles/main.scss';
 
-export default function Name() {
-  return (
-    <h1 className={'name'}>КодикУМ</h1>
-  );
-}
+const Name: FC = () => (
+  <h1 className={'name'}>КодикУМ</h1>
+)
+export default Name
