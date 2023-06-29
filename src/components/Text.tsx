@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React from "react";
 import '../styles/main.scss'
+import { RegProps } from "../app.interface";
 
-const Text:FC = () => (
-  <p className={'content__text'}>Только для зарегистрированных пользователей</p>
+const Text = (props: RegProps) => (
+  <p className={'content__text'}>{props.title}</p>
 );
 
 export default Text

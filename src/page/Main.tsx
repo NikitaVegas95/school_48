@@ -11,8 +11,8 @@ const Main: FC = () => (
     <div className={'img'}></div>
     <div className={'content'}>
       <Name/>
-      <Title/>
-      <Text/>
+      <Title title={'Авторизация'}/>
+      <Text title={'Только для зарегистрированных пользователей'}/>
       <Form/>
       <Registration/>
     </div>
