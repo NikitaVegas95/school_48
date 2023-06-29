@@ -25,15 +25,12 @@ export default function Form() {
   return (
     <form className={"content__form grid"} onSubmit={handleSubmit(onSubmit)}>
       <div className={"content__input-wrapper"}>
-        <input className={"input input__mail"} {...register('email', { required: true, maxLength: 20, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        })} type=" " placeholder={' '}/>
-        <div>
-          {errors?.email && <span className={"empty-input-error"}>Обязательное поле для ввода</span>}
-        </div>
+        <input maxLength={30} minLength={8} className={"input input__mail"} {...register('email', { required: true, maxLength: 20, pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        })} type=" " placeholder={' '}/>{errors?.email && <span className={"empty-input-error"}>Обязательное поле для ввода</span>}
         <label className={'input-label placeholder'} htmlFor="email">E-mail</label>
       </div>
       <div className={"content__input-wrapper"}>
-        <input className={"input input__pass"} {...register('pass',{ required: true, maxLength: 20, })} type="password" placeholder={' '}/>
+        <input maxLength={20} minLength={8} className={"input input__pass"} {...register('pass',{ required: true, maxLength: 20, })} type="password" placeholder={' '}/>
         <div>
           {errors?.pass && <span className={"empty-input-error"}>Обязательное поле для ввода</span>}
         </div>

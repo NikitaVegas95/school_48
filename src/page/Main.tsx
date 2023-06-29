@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import '../styles/main.scss'
-import Title from "./Title";
-import Text from "./Text";
-import Name from "./Name";
+import Title from "../components/Title";
+import Text from "../components/Text";
+import Name from "../components/Name";
 import Form from "../moduls/Form";
-import Registration from "./Registration";
+import Registration from "../components/Registration";
 
-const Container: FC = () => (
+const Main: FC = () => (
   <div className={'container'}>
     <div className={'img'}></div>
     <div className={'content'}>
@@ -19,4 +19,4 @@ const Container: FC = () => (
   </div>
 );
 
-export default Container
+export default Main
