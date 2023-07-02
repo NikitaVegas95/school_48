@@ -8,6 +8,9 @@ export type RegProps = {
   title: string
 }
 
-export interface Pattern {
-  patternEmail: string
+export interface ModalProps  {
+  active: any
+  setActive: any
+  setModalActive: any
+  modalActive: any
 }
