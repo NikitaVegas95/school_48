@@ -1,8 +1,14 @@
+import { Routes, Route, Link } from "react-router-dom";
 import React, { FC } from 'react';
-import Container from "./components/Container";
+import Main from "./page/Main";
+import Reg from "./page/Reg";
+
 
 const App: FC = () => (
-  <Container/>
+    <Routes>
+      <Route path="/" element={<Main/>}/>
+      <Route path="/registration" element={<Reg/>}/>
+    </Routes>
 )
 
 export default App
