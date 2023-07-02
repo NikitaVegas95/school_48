@@ -5,10 +5,10 @@ import Reg from "./page/Reg";
 
 
 const App: FC = () => (
-    <Routes>
-      <Route path="/" element={<Main/>}/>
-      <Route path="/registration" element={<Reg/>}/>
-    </Routes>
+  <Routes>
+    <Route path="/" element={<Main/>}/>
+    <Route path="/registration" element={<Reg/>}/>
+  </Routes>
 )
 
 export default App

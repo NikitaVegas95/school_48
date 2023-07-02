@@ -452,3 +452,96 @@ input.invalid {
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
 }
+
+.content__progress-bar {
+    margin-top: 74px;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-wrapper {
+    margin-bottom: 8px;
+}
+
+.progress-bar-text {
+    font-family: $font-family-MinSans;
+    font-weight: $regular-font-weight;
+    font-size: 14px;
+    line-height: 19px;
+    color: $black-color;
+    opacity: .6;
+}
+
+.progress-bar-value {
+    font-family: $font-family-MinSans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $black-color;
+}
+
+.progress-bar {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background: #E1E1E4;
+    border-radius: 5px;
+
+    &::before {
+        content: " ";
+        position: absolute;
+        width: 52px;
+        height: 8px;
+        background: #10A674;
+        border-radius: 5px;
+    }
+
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 195px;
+        height: 8px;
+        background: rgba(16, 166, 116, 0.3);
+        border-radius: 5px;
+    }
+
+    &__sizes {
+
+        &::before {
+            width: 195px;
+        }
+
+        &::after {
+            width: 390px;
+        }
+
+    }
+
+    &_loc {
+
+        &::before {
+            width: 195px;
+        }
+
+        &::after {
+            width: 390px;
+        }
+
+    }
+
+    &_end {
+
+        &::before {
+            width: 390px;
+        }
+
+        &::after {
+            width: 592px;
+        }
+
+    }
+
+}

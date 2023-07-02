@@ -1,8 +1,11 @@
-import patternEmail from "./moduls/form/pattern/pattern-email";
-
 export interface IFormInput {
   email: string
   pass: string
+  name: string
+}
+
+export type RegProps = {
+  title: string
 }
 
 export interface Pattern {
