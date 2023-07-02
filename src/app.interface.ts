@@ -7,3 +7,7 @@ export interface IFormInput {
 export type RegProps = {
   title: string
 }
+
+export interface Pattern {
+  patternEmail: string
+}
