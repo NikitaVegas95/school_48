@@ -570,11 +570,25 @@ input.invalid {
     padding: 48px 40px;
     border-radius: 16px;
     background-color: $white-color;
-    width: 50vw;
+    max-width: 680px;
     transform: scale(0.3);
     transition: transform .3s ease-in-out;
 }
 
 .modal__content.active {
     transform: scale(1);
+}
+
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-img {
+    width: 168px;
+    height: 168px;
+    background-image: url("../img/modal-war.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }

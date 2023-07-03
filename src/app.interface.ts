@@ -1,3 +1,5 @@
+import { Dispatch } from "react";
+
 export interface IFormInput {
   email: string
   pass: string
@@ -9,8 +11,7 @@ export type RegProps = {
 }
 
 export interface ModalProps  {
-  active: any
-  setActive: any
-  setModalActive: any
-  modalActive: any
+  setModalActive: Dispatch<boolean>
+  modalActive: boolean
+  children: any
 }
