@@ -1,8 +1,7 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import React, { FC } from 'react';
 import Main from "./page/Main";
 import Reg from "./page/Reg";
-
 
 const App: FC = () => (
   <Routes>
