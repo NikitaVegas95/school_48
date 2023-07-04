@@ -13,5 +13,4 @@ export type RegProps = {
 export interface ModalProps  {
   setModalActive: Dispatch<boolean>
   modalActive: boolean
-  children: any
 }
